@@ -1,3 +1,11 @@
-h1 {
+h3 {
     color: rgb(57, 13, 82);
+}
+h2 {
+    color: rgb(88, 9, 9);
+}
+
+.dark{
+    background-color: #000;
+    color: #fff;
 }
