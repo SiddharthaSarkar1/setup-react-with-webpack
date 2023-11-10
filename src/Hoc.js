@@ -41,5 +41,6 @@ const Songs = ({ songs }) => {
   }
 
   const BooksHOC = withHOC(Books, 'dark');
+  const SongsHOC = withHOC(Songs, 'dark');
   
-export {Books, Songs, BooksHOC};
+export {Books, Songs, BooksHOC, SongsHOC};

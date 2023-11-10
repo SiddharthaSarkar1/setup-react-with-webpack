@@ -1,6 +1,9 @@
 import React from "react";
 import TodaysDate from "./TodaysDate";
-import { Books, BooksHOC, Songs } from "./Hoc";
+import { Books, BooksHOC, Songs, SongsHOC } from "./Hoc";
+import BoxContainer from "./components/BoxContainer";
+import MyButton from "./components/MyButton";
+import Card from "./components/Card";
 
 const DB = {
   books: [
@@ -23,6 +26,21 @@ const App = () => {
       <Books books={DB.books}/>
       <Songs songs={DB.songs}/>
       <BooksHOC books={DB.books}/>
+      <SongsHOC songs={DB.songs} />
+
+      <p>Example of children props</p>
+      <BoxContainer value={"This is props"}>
+          <h3>This is children props example</h3>
+          <p>Did you understand??</p>
+      </BoxContainer>
+      <Card>
+      <MyButton>Hey there!!</MyButton>
+      <MyButton>Hello there!!</MyButton>
+      </Card>
+
+      <Card>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat tempora modi pariatur vel eaque provident? Blanditiis necessitatibus iste alias, libero unde rerum nihil quaerat.</p>
+      </Card>
       </>
   );
 };
